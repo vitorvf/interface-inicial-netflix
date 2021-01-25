@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: normal;
+    font-display: optional;
+    src: url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2') format('woff2'), url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff') format('woff');
+}
+
+body {
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #000;
+}
+
+a, a:hover {
+    color: inherit;
+}
+header {
+    z-index: 10;
+}
+section {
+    border-bottom: 8px solid #222;
+}
+
+.logo {
+    max-height: 36px;
+}
+
+@media (max-width: 548px) {
+    .logo {
+        max-height: 24px;
+    }
+}
+
+.btn-login {
+    background-color: #e50914;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 3px;
+}
+
+@media (max-width: 548px) {
+    .btn-login {
+        font-size: 0.9rem;
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+.box-background, .box .content {
+    height: 83.27vh;
+}
+
+@media (max-width: 548px) {
+    .box-background, .box .content {
+        height: 64vh;
+    }
+}
+.box .content h1 {
+    font-size: 3.125rem;
+}
+
+.box .content h2 {
+    font-size: 1.625rem;
+}
+
+.box .content h3, .perguntas .subtitle {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 548px) {
+    .box .content h3 {
+        padding: 0 7%;
+    }
+    .box .content h1 {
+        font-size: 1.75rem;
+    }
+    .box .content h2 {
+        font-size: 1.125rem;
+    }
+}
+
+.box .box-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-background::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), color-stop(60%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    background-image: -moz- oldlinear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.form-control {
+    height: 60px;
+}
+
+@media (max-width: 548px){
+    .form-control {
+        height: 48px;
+        flex: none !important
+    }    
+}
+.assine .input-group-text {
+    font-size: 1.625rem;
+    background-color: #e50914;
+    border-color: #e50914;
+    border-radius: 0;
+}
+
+.assine .icon-svg {
+    width: 1rem;
+    height: 1.2rem;
+}
+
+@media (max-width: 548px){ 
+    .assine .input-group-text {
+        font-size: 1rem;
+        min-height: 44px;
+        font-weight: 500;
+        border-radius: 2px;
+    }
+    .assine .icon-svg {
+        width: 1rem;
+        height: 0.8rem;
+    }
+}
+
+section .title {
+    font-size: 3.125rem;
+}
+
+section .subtitle {
+    font-size: 1.625rem;
+}
+@media (max-width: 548px){ 
+    section .title {
+        font-size: 1.625rem;
+        text-align: center;
+    }
+    section .subtitle {
+        font-size: 1.125rem;
+        text-align: center;
+        padding: 0 2%;
+        margin-top: 1rem;
+    }
+}
+.video-tv img, .video-desktop img {
+    position: relative;
+    z-index: 1;
+}
+.video-tv video {
+    position: absolute;
+    left: 13.5%;
+    top: 21%;
+    max-width: 72.5%;
+}
+.video-desktop video {
+    position: absolute;
+    left: 18%;
+    max-width: 64%;
+    top: 11%;
+}
+@media (min-width: 950px) {
+    .mobile {
+        left: -15%;
+    }
+}
+.mobile-card {
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: black;
+    width: 60%;
+    min-width: 15em;
+    padding: 0.25em 0.65em;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 2em 0 #000000;
+    border-radius: 0.75em;
+}
+
+.mobile-card .card-image img {
+    height: 4.5em
+}
+.mobile-card h5 {
+    font-size: 1rem;
+}
+.mobile-card label {
+    font-size: 0.9em;
+    color: #0071eb;
+}
+.mobile-card .gif img {
+    width: 3em;
+}
+
+.perguntas .accordion button {
+    background: #303030;
+    padding: 1.1rem 2.2rem 1.1rem 1.2rem;
+    width: 100%;
+    border: 0;
+    text-align: left;
+    position: relative;
+    color: #fff;
+    outline: none;
+    font-size: 1.625rem;
+}
+
+.perguntas .accordion button span {
+    position: absolute;
+    right: 20px;
+    font-size: 4rem;
+    line-height: 1.1;
+    top: 0;
+}
+.perguntas .accordion button[aria-expanded="true"] span {
+    transform: rotate(135deg);
+}
+
+.perguntas .accordion .card-body {
+    background: #303030;
+    font-size: 1.625rem;
+    color: #fff;
+    white-space: pre-line;
+    margin-top: 2px;
+}
+
+@media (max-width: 548px) { 
+    .perguntas {
+        padding: 0;
+    }
+    .perguntas .accordion button {
+        font-size: 1.125rem;
+        padding: 0.8rem 2.2rem 0.8rem 1.2rem;
+    }
+    .perguntas .accordion .card-body {
+        font-size: 1.125rem;
+    }
+    .perguntas .accordion button span {
+        font-size: 2.5rem;
+        line-height: 1.3;
+    }
+    .perguntas .subtitle {
+        padding: 0 7%;
+    }
+    .form-group {
+        margin-bottom: 8px;
+    }
+}
+
+footer, footer a {
+    color: #a6a6a6;
+}
+
+footer a {
+    font-size: 13px;
+}
+
+footer select {
+    background-color: #000000;
+    background-image: none;
+    border: 1px solid #333333;
+    color: #999;
+    font-size: 16px;
+    padding: 12px 26px 12px 50px;
+    line-height: 1.7;
+}
+
+footer .select-globe img {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    width: 16px;
+    height: 16px;
+}

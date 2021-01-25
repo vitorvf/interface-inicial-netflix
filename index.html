@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Brasil - assistir a séries online, assistir a filmes online</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <header class="position-absolute w-100 pt-1">
+    <div class="ml-3 mr-3 ml-md-5 mr-md-5 p-2 pt-4">
+      <div class="d-flex align-items-center">
+        <img class="logo" src="img/logo.svg" />
+        <div class="ml-auto">
+          <a href="" class="btn-login">Entrar</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="box">
+    <div class="box-background position-absolute">
+      <img src="img/bg.jpg" />
+    </div>
+
+    <div class="content position-relative d-flex justify-content-center align-items-center">
+      <div class="d-flex flex-column mt-5 pd-5 mt-md-0 pt-md-0">
+        <div class="d-flex justify-content-center mt-md-4">
+          <h1 class="text-white text-center font-weight-bold m-o col-md-9 mt-md-5">Filmes, séries e muito mais. Sem limites.</h1>
+        </div>
+
+        <h2 class="text-white text-center m-3">Assista onde quiser. Cancele quando quiser.</h2>
+
+        <div class="d-flex justify-content-center pt-3 pb-3 order-1 order-md-0">
+          <div class="input-group col-md-10 flex-column flex-md-row assine">
+            <input type="text" class="form-control" placeholder="Email">
+            <div class="input-group-append d-flex justify-content-center mt-2 mt-md-0">
+              <span class="input-group-text text-white pl-3 pl-md-4">ASSINE A NETFLIX <svg class="icon-svg ml-2 ml-md-3 mr-md-3" viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill="#fff"></path>
+                </svg></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-white text-center">Pronto para assistir? Informe seu email para criar ou acessar sua conta.</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <div>
+            <h1 class="title text-white font-weight-bold mb-4">Aproveite na TV.</h1>
+            <h2 class="subtitle text-white">Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros aparelhos.</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="position-relative video-tv">
+            <img class="img-fluid" src="img/tv.png" />
+            <video autoplay playsinline muted loop>
+              <source src="video/video-tv.m4v" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-md-6 order-1 order-md-0">
+          <div class="position-relative mobile">
+            <img class="img-fluid" src="img/mobile.jpg" />
+            <div class="mobile-card d-flex justify-content-between align-items-center p-2">
+              <div class="card-image">
+                <img src="img/boxshot.png" />
+              </div>
+              <div class="content">
+                <h5 class="text-white m-0">Stranger Things</h5>
+                <label>Download em andamento...</label>
+              </div>
+              <div class="gif">
+                <img src="img/download-icon.gif" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div>
+            <h1 class="title text-white font-weight-bold mb-4">Baixe séries e assista em qualquer lugar.</h1>
+            <h2 class="subtitle text-white">Baixe suas séries e filmes favoritos e assista offline</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <div>
+            <h1 class="title text-white font-weight-bold mb-4">Assista quando quiser.</h1>
+            <h2 class="subtitle text-white">Assista no celular, tablet, smart TV ou notebook sem pagar a mais por isso.</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="position-relative video-desktop">
+            <img class="img-fluid" src="img/device-pile.png" />
+            <video autoplay playsinline muted loop>
+              <source src="video/video-devices.m4v" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container pt-5 pb-5 perguntas">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h1 class="text-white text-center font-weight-bold title">Perguntas frequentes</h1>
+        </div>
+
+        <div class="col-md-9">
+          <div class="accordion mt-5" id="accordion">
+            <div class="form-group">
+              <button type="button" data-toggle="collapse" data-target="#one">
+                O que é a Netflix?
+                <span>+</span>
+              </button>
+
+              <div id="one" class="collapse" data-parent="#accordion">
+                <div class="card-body pl-4 pr-4">A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.
+
+                  Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <button type="button" data-toggle="collapse" data-target="#two">
+                Quanto custa a Netflix?
+                <span>+</span>
+              </button>
+
+              <div id="two" class="collapse" data-parent="#accordion">
+                <div class="card-body pl-4 pr-4">Assista à Netflix no seu celular, tablet, smart TV, notebook ou aparelho de streaming por uma taxa mensal única e acessível. Os planos começam em R$21,90 por mês. Sem contrato nem taxa extras.</div>
+
+              </div>
+            </div>
+
+            <div class="form-group">
+              <button type="button" data-toggle="collapse" data-target="#three">
+                Onde posso assistir?
+                <span>+</span>
+              </button>
+              <div id="three" class="collapse" data-parent="#accordion">
+                <div class="card-body pl-4 pr-4">Assista onde quiser, o quanto quiser e em um número ilimitado de aparelhos. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.
+
+                  Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column">
+            <div class="d-flex justify-content-center pt-3 pb-3 order-1 order-md-0">
+              <div class="input-group flex-column flex-md-row assine card-body">
+                <input type="text" class="form-control" placeholder="Email">
+                <div class="input-group-append d-flex justify-content-center mt-2 mt-md-0">
+                  <span class="input-group-text text-white pl-3 pl-md-4">ASSINE A NETFLIX <svg class="icon-svg ml-2 ml-md-3 mr-md-3" viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill="#fff"></path>
+                    </svg></span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-white text-center subtitle">Pronto para assistir? Informe seu email para criar ou acessar sua conta.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container pt-5 pb-5">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <p>Dúvidas? Entre em contato.</p>
+
+          <div class="row">
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Perguntas frequentes</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Centro de ajuda</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Conta</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Imprensa</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Relações com investidores</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Carreiras</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Resgatar cartão pré-pago</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Comprar cartão pré-pago</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Formas de assistir</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Termos de uso</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Privacidade</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Preferências de cookies</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Informações corporativas</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Entre em contato</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Teste de velocidade</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Avisos legais</a>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <a href="">Originais Netflix</a>
+            </div>
+          </div>
+
+          <div class="position-relative select-globe mt-4">
+            <img src="img/globe.svg" />
+            <select>
+              <option>Português</option>
+              <option>English</option>
+            </select>
+          </div>
+
+          <div class="mt-3">
+            <a href="">Netflix Brasil</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
