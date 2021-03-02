@@ -7,6 +7,7 @@ Interface inicial da netflix feita com Html e Bootstrap
 ![1](https://user-images.githubusercontent.com/47065330/109692392-3a022880-7b67-11eb-91cf-1728812633e1.png)
 
 
+
 ![2](https://user-images.githubusercontent.com/47065330/109692396-3bcbec00-7b67-11eb-827f-c277dc65b1f2.png)
 
 
